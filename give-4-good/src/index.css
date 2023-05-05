@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* CSS Variables */
+:root {
+  --normal-font: 600;
+  --bold-font: 800;
+  --bolder-font: 1100;
+  --primary-color: black;
+  --secondary-color: grey;
+  --line-height: 1.7rem;
+  --transition: 0.4s ease-in;
+  --nav-height: 70px; 
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+  body {
+  font-family: "Roboto", sans-serf;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a, button {
+  text-decoration: none;
+  color: var(--primary-color);
+  background: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+a:hover, button:hover {
+  color: var(--secondary-color);
+} 
+
+nav {
+  background: #fff;
+  /* background: transparent; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  /* box-shadow: 2px 3px 2px #f1f1f1; */
+  /* border: 2px solid black; */
+
+  /* make navbar sticky */
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hamburger {
+  display: none;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.nav-link {
+  font-weight: var(--bold-font);
+  font-size: 23px;
+}
+
+.hero .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%; 
+  width:100%; 
+}
+
+.about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: -100px;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.map-section {
+  position: absolute;
+  right: 0; bottom: 0; left: 0;
+  border: 15px solid white;
+  width: 100vw;
+  height: calc(100vh - var(--nav-height));
+}
+
+/******* HOME *******/
+
+.home-section {
+  position: absolute;
+  padding: 50px 0px 0px;
+  right: 0; bottom: 0; left: 0;
+  width: 100vw;
+  /* height: calc(100vh - var(--nav-height)); */
+  height: calc(100vh);
+  /* background-image: url('./images/helping-hand.jpg'); */
+  background-image: url('./images/donate.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.about{
+    position: absolute;
+    padding: -50px 0px 0px;
+    right: 0; bottom: 0; left: 0;
+    width: 100vw;
+    /* height: calc(100vh - var(--nav-height)); */
+    height: calc(100vh);
+    /* background-image: url('./images/helping-hand.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.about-section p{
+  text-align: left;
+  color:rgb(90, 88, 88);
+  margin-left: 65px;
+  margin-right:50px;
+  font-size: 15px;
+}
+
+
+.about_blurb{
+  font-size: 35px;
+  text-align: left;
+  color: rgb(62, 60, 60);
+  margin-left: 65px;
+  margin-right:65px;
+  padding-right: 60%;
+}
+
+.about-p{
+  text-align: left;
+  color:rgb(90, 88, 88);
+  margin-left: 30px;
+  margin-right:0px;
+  font-size: 15px;
+}
+
+
+.img_class{
+  /* margin-left: 5px;
+  margin-right: 65px; */
+  /* position: absolute; */
+  /* top: 100px;
+  left: 40; */
+
+}
+
+.img_class img{
+  position: absolute;
+  margin-left: -150px;
+  margin-right: 300px;
+  margin-top: -125px;
+  /* width: 750px; */
+  height:600px;
+  border-radius: 40px;
+  top: 80px;
+}
+
+.donate {
+  /* border: 1px solid blue; */
+  position: absolute;
+  padding: 400px 0px 0px;
+  right: 0; bottom: 0; left: 0;
+  width: 100vw;
+  height: calc(100vh - var(--nav-height));
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#donate-btn {
+  background: white;
+  color: black;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 30px;
+
+}
+
+#donate-btn:hover {
+  background-color: lightgrey;
+}
+
+.home-section h1 {
+  font-size: 100px;
+  text-shadow: 5px 5px black;
+  color: white;
+}
+
+/******* NGO *******/
+.NGO {
+  text-align: center;
+}
+
+.NGO-title {
+  padding: 20px;
+}
+
+.NGO-title h1 {
+  font-size: 30px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  max-width: 60px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  padding: 40px;
+}
+
+#ngo-logo {
+  height: 100px;
+}
+
+.ngo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  /* border: 1px solid pink; */
+}
+
+.logo {
+  height: 100px;
+}
+
+#logo img {
+  width: 80px;
+  height: auto;
+}
